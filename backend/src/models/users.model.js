@@ -8,8 +8,7 @@ const userSchema = new mongoose.Schema({
     userName: {type: String, required: true, unique: true},
     fullName: {type: String, required: true},
     email: {type: String, required: true, unique: true}, // unique -> que no se pueda repetir, que sea unico 
-    password: {type: String, required: true},
-    role: {type: String, default: "cliente"} // default -> que es un valor predeterminado 
+    password: {type: String, required: true}
 });
 
 // 3. Definir nuestro modelo 
