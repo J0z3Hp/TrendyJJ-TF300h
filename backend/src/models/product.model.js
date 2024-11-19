@@ -10,7 +10,7 @@ const productSchema = new mongoose.Schema({
     // Este nombre lo eleguimos nosotros sin caracteres especiales, son caracteristicas de la informacion que queremos guardar, el requiered -> para que sea obligatorio poner una imaguen o lo que queramos poner obligatorio, el type(tipo de dato) siempre es obligatorio, hay type Date(para fechas)
     image:{type: String, required: true},
     name: {type: String, required: true},
-    category: {type: String, required: true},
+    category: {type: String, required: true, enum: ["hombre", "mujer"], enum: ["color", "talla"]},
     price:{type: String, required: true},
     stock: {type: Number, required: true}
 });

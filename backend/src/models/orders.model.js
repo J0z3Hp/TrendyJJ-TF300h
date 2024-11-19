@@ -6,8 +6,8 @@ import mongoose from "mongoose";
 
 const ordersSchema = new mongoose.Schema({ 
     // Este nombre lo eleguimos nosotros sin caracteres especiales, son caracteristicas de la informacion que queremos guardar, el requiered -> para que sea obligatorio poner una imaguen o lo que queramos poner obligatorio, el type(tipo de dato) siempre es obligatorio, hay type Date(para fechas)
-    products: {type: [Schema.ObjectId], ref: "product"},
-    user: {type: Schema.ObjectId, ref: "user"},
+    products: {type: [Schema.Types.ObjectId], ref: "product"},
+    user: {type: Schema.Types.ObjectId, ref: "user"},
     date: {type: Date, default: Date.now},
     totalPrice: {type: String, required: true}
 });
