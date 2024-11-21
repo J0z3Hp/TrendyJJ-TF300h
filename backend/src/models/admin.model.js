@@ -15,4 +15,4 @@ const adminSchema = new mongoose.Schema({
 // 3. Decirle ala base de datos que cree una coleccón con el esquema anterior
 // El primer parametro, es el nombre de la colección
 // El segundo parametro, es la estructara de datos 
-export const adminModel = mongoose.model("admin", productSchema);
+export const adminModel = mongoose.model("admin", adminSchema);
