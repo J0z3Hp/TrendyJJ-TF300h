@@ -11,11 +11,8 @@ const ordersSchema = new mongoose.Schema({
     totalPrice: {type: String, required: true}
 });
 
-<<<<<<< HEAD
+
 // 3. Decirle ala base de datos que cree una coleccón con el esquema anterior
 // El primer parametro, es el nombre de la colección
 // El segundo parametro, es la estructara de datos 
-=======
-// Decirle a la base de datos que cree una coleccón con el esquema anterior
->>>>>>> subrama-Jose
 export const ordersModel = mongoose.model("orders", ordersSchema);
