@@ -67,7 +67,7 @@ export const showOrderById = async (req, res) => {
 export const updatedOrder = async (request, response) => {
 
     try {
-        let idUpdateOrder = request.parms.id;
+        let idUpdateOrder = request.params.id;
         let dataForUpdate = request.body;
 
         const orderUpdate = await ordersModel.findByIdAndUpdate(idUpdateOrder, dataForUpdate);
