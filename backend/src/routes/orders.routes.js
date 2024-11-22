@@ -2,6 +2,7 @@ import { createOrder, showOrderById, updatedOrder } from "../controllers/orders.
 // import { createOrder, showOrderById, updatedOrder  } from "../controllers/admin.controller.js";
 
 import express from "express";
+import { auth } from "../middleware/auth.js";
 
 export const orderRouter = express.Router();
 

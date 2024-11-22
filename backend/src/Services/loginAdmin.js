@@ -3,7 +3,6 @@ import { adminModel } from "../models/admin.model.js";
 import { generateToken } from "../lib/jwt.js";
 
 import bcrypt from "bcryptjs";
-import { request } from "express";
 
 
 export async function loginAdmin (request, response){
@@ -31,8 +30,9 @@ export async function loginAdmin (request, response){
         }
 
         const payload = {
-            id: adminFound,
-            name: adminFound.name
+            id: adminFound._id,
+            name: adminFound.name,
+            isAdmin: True
         }
        
        /* if(userFound.role === "admin"){

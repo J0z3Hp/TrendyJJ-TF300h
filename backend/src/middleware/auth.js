@@ -38,6 +38,6 @@ export const auth = (requiredRole) => {
         }
         
         // Para que pueda continuar con los siguientes procesos y no se quede en uno no mas
-        next()
+        next();
     } 
 }

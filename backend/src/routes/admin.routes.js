@@ -1,6 +1,7 @@
 import { createAdmin, showAdmin } from "../controllers/admin.controller.js";
 
 import express from "express";
+import { auth } from "../middleware/auth.js";
 
 //Configuración del router
 export const adminRouter = express.Router();

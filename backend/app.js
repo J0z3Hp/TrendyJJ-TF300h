@@ -6,7 +6,7 @@ import { usersRouter } from "./src/routes/user.routes.js";
 import { loginUserRouter } from "./src/routes/loginUser.routes.js";
 import { adminRouter } from "./src/routes/admin.routes.js";
 import { orderRouter } from "./src/routes/orders.routes.js";
-
+ 
 
 // Configurar el uso de nuestro servidor 
 const app = express();
@@ -26,4 +26,4 @@ app.use("/ordenes", orderRouter);
 // Ejecutar el servidor en nuestro computador
 app.listen(port, () => {
     console.log("El servidor se esta ejecutando coreectamente, en el puerto", port);
-});
+});  
