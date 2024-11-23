@@ -8,10 +8,10 @@ export const productRouter = express.Router();
 productRouter.get("/obtener", getProduct);
 
 // Ruta para la peticion POST 
-productRouter.post("/crear", postProduct);
+productRouter.post("/crear", auth("admin"), postProduct);
 
 // Ruta para la peticion PUT 
-productRouter.put("/actualizar/:id", putProductById);
+productRouter.put("/actualizar/:id",auth("admin"), putProductById);
 
 // Ruta para la peticion DELETE
-productRouter.delete("/eliminar/:id", deleteProductById);
+productRouter.delete("/eliminar/:id",auth("admin"), deleteProductById);

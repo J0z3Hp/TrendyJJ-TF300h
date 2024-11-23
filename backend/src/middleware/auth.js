@@ -3,7 +3,7 @@ import { verifyToken } from "../lib/jwt.js";
 export const auth = (requiredRole) => {
     return async(request, response, next) => {
 
-        //Existencia del token ===================================
+        // Existencia del token ===================================
         let token = request.headers["authorization"];
         console.log("Token obtenido de la cabecera: " + token);
         
