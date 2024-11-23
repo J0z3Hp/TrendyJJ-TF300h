@@ -38,7 +38,7 @@ export const loginUser = async(request, response) => {
         const token = await generateToken(payload);
         return response.status(200).json({
             "mensaje": "Inicio de sesion exitoso",
-            "tokenGenerado": token // Es para ver si funciona y todo esta correcto, y tambien para probar el funcionamiento
+            "tokenGenerado": token 
         });
 
     } catch (error) {

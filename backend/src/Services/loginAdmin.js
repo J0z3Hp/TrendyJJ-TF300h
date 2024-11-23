@@ -18,7 +18,7 @@ export async function loginAdmin (request, response){
                 mensaje: "Administrador no encontrado, por favor verifica correo y contraseña"
             });
         }
-
+        
         const isValidPasswordAdmin = await bcrypt.compare(passwordLoginAdmin, adminFound.password);
 
         if(!isValidPasswordAdmin){
@@ -30,7 +30,7 @@ export async function loginAdmin (request, response){
         const payload = {
             id: adminFound._id,
             name: adminFound.name,
-            isAdmin: True
+            isAdmin: true
         }
        
        /* if(userFound.role === "admin"){

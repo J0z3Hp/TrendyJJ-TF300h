@@ -1,6 +1,8 @@
+// Aca importamos nuestro modelo para hacer las peticiones https
 import { userModel } from "../models/user.model.js";
 import bcrypt from "bcryptjs" 
 
+// Aca solo tendremos dos peticiones una POST y otra GET
 // Peticion POST 
 export const createUser = async(request, response) => {
     try { 

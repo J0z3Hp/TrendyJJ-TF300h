@@ -13,9 +13,8 @@ export const auth = (requiredRole) => {
             });
         }
 
-        // Que el token sea permitido
+        // Que el token sea permitido y solo escoja solamente el token y no el bearer
         token = token.split(" ")[1];
-        console.log("Token despues de separarlo del bearer: " + token);
 
         try{
             const decoded = await verifyToken(token);

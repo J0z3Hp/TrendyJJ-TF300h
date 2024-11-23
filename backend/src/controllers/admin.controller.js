@@ -18,12 +18,12 @@ export const createAdmin = async (req, res) => {
 
         //Procedemos a encriptar la contraseña usanto el metodo .hash
 
-        // const codedPasswordAdmin = await bcrypt.hash(password, 10);
+        const codedPasswordAdmin = await bcrypt.hash(password, 10);
 
         const newAdmin = await adminModel.create({
             name,
             email,
-            password,
+            password: codedPasswordAdmin,
             profileImagen
         });
 

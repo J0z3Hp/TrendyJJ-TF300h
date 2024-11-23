@@ -1,6 +1,7 @@
-import { request, response } from "express";
+// Aca importamos nuestro modelos de porductos
 import { productModel } from "../models/product.model.js";
 
+// Aca tendremos 4 peticiones POST, GET, PUT, DELETE
 // peticiocn POST
 export const postProduct = async (request, response) => {
 

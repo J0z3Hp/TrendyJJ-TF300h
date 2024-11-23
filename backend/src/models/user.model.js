@@ -1,15 +1,11 @@
-// 1. Importar las dependencias
-
 import mongoose from "mongoose";
 
-// 2. crearnos el esquema de datos 
+// Crearnos el Schema de datos para los usuarios
 
 const userSchema = new mongoose.Schema({
     fullName: {type: String, required: true},
-    email: {type: String, required: true, unique: true}, // unique -> que no se pueda repetir, que sea unico 
+    email: {type: String, required: true, unique: true}, 
     password: {type: String, required: true}
 });
-
-// 3. Definir nuestro modelo 
 
 export const userModel = mongoose.model("user", userSchema);
