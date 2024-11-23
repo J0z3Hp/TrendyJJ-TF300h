@@ -13,6 +13,8 @@ Desde un sencillo proceso de registro hasta un catálogo extenso y fácil de nav
 
 Con este proyecto, buscamos construir una comunidad sólida que tenga de primera mano las últimas actualizaciones respecto a la moda visitando ropa de calidad para cualquier ocasión. Nuestro objetivo es impulsar las ventas, y el crecimiento de nuestra comunidad como marca, generando un mercado dinámico y atractivo para todos los amantes de verse bien, no olvides que proyectar una buena imagen es la base del éxito.
 
+Para la ejecución del proyecto es necesario hacerlo medinte Postman, para la ejecución de las diferentes peticiones. Para el caso de las secciónes de administrador, todas van a requerir el inicio de sesión ya que mediante la tecnologia jwt nos permite la validación de indentidades para poder delimitar roles y actividades dentro de nuestra plataforma, dandole así un manejo a toda la información según lo requiera. Adicional las peticiones HTTP nos permiten interactuar con el aplicativo logrando crear ordenes, crear usuarios, modificar las ordenes, entre otras interacciones que facilitaran el proceso de gestión del sitio web y facilitando la compra para los usuarios. Adicional y gracias a la tecnologia MongoDB atlas  podemos almacenar la información de nuestros productos y usuarios, que complementada jsonwebtoken y bcryptjs se mantendra segura y solo será usada para los fines pertinentes. 
+
 ## **👥 Autores**
-- **Jose Luis Mariño**
-- **Juan Felipe Rodriguez**
+- **Jose Luis Mariño - Scrum Master**
+- **Juan Felipe Rodriguez - Product Owner**
