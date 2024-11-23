@@ -9,3 +9,4 @@ export const adminRouter = express.Router();
 
 adminRouter.post("/crear",auth("admin"), createAdmin);
 adminRouter.get("/obtener",auth("admin"), showAdmin);
+

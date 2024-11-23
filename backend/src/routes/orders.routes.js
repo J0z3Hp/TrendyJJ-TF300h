@@ -5,4 +5,4 @@ export const orderRouter = express.Router();
 
 orderRouter.post("/crear", createOrder);
 orderRouter.get("/obtener/:id", showOrderById);
-orderRouter.put("/actualizar/:id", updatedOrder);
+orderRouter.put("/actualizar/:id", auth("admin"),updatedOrder);
