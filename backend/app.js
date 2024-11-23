@@ -22,11 +22,11 @@ app.use("/productos", productRouter);
 app.use("/usuarios", usersRouter);
 app.use("/iniciarSesion", loginUserRouter);
 app.use("/administradores", adminRouter);
-app.use("/ordenes", orderRouter); 
+app.use("/ordenes", orderRouter);
 app.use("/inicarSesionAdmin", loginAdminRouter);
 
 
 // Ejecutar el servidor en nuestro computador
 app.listen(port, () => {
     console.log("El servidor se esta ejecutando coreectamente, en el puerto", port);
-});  
+});     
