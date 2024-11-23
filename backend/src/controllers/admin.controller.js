@@ -1,8 +1,8 @@
 // Importamos el modelo creado para administrador
 
 import { adminModel } from "../models/admin.model.js";
-// Para el modelo de usuarios se requiere el uso de contraseña por lo cual importaremos la dependencia para encriptar
-// import bcrypt from "bcryptjs";
+// Para el modelo de administrador se requiere el uso de contraseña por lo cual importaremos la dependencia para encriptar
+import bcrypt from "bcryptjs";
 
 
 //Vamos a crear petición para crear administrador 
