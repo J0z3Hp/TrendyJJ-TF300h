@@ -1,27 +1,18 @@
-# FRONTEND
+Trendy JJ
+¡Bienvenido a Trendy JJ Shop! 🎉 Tu tienda en línea para los amantes de la moda 🛒✨ Aquí encontrarás modelos clásicos, deportivos, y de colección. Variedad, versatilidad y buen gusto para ti y para aquellos que buscan un regalo único 🎁.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+📋 Características
+📦 Catálogo amplio: Explora una colección de camisas, camisetas, esqueletos, entre otros productos de vestir con modelos detallados y de alta calidad.
+🔍 Búsqueda: Encuentra la prenda que buscas.
+💳 Pago seguro: Métodos de pago confiables y protegidos para tu seguridad.
+🚚 Envío rápido: Recibe tus prendas en la puerta de tu casa.
 
-## Development server
+Nuestro sitio web ha sido cuidadosamente diseñado para brindar a los usuarios y amantes de la moda una plataforma intuitiva y atractiva donde encontraras un catalogo con alta variedad de prendas de vanguardia y autenticidad. Con una interfaz amigable y una estética inspirada en la calidad, elegancia y estilo de nuestras prendas, te ofrecemos una experiencia de usuario inigualable, facilitando un proceso de compra seguro y al alcance de todos.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Desde un sencillo proceso de registro hasta un catálogo extenso y fácil de navegar, te permite comprar tus modelos favoritos de manera rápida y segura. Además, nuestra plataforma se adapta perfectamente a dispositivos móviles, permitiéndote acceder a tu colección y realizar transacciones desde cualquier lugar y en cualquier momento.
 
-## Code scaffolding
+Con este proyecto, buscamos construir una comunidad sólida que tenga de primera mano las ultimas actualizaciones respecto a la moda visitiendo ropa de calidad para cualquier ocasión. Nuestro objetivo es impulsar las ventas, y el crecimiento de nuestra comunidad como marca, generando un mercado dinámico y atractivo para todos los amantes de verse bien, no olvides que proyectar una buena imagen es la base del exito.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+👥 Autores
+Jose Luis Mariño
+Juan Felipe Rodriguez
