@@ -31,4 +31,4 @@ export class ProductosService {
   deleteProductos(id: string){
     return this._httpClient.delete(this.URL_PRODUCTOS + "/eliminar" + id);
   }
-}
+} 
