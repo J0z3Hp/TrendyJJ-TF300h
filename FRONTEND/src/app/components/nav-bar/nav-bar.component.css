@@ -19,6 +19,7 @@ li, a, button {
 	width: 7.3%;
 	object-fit: contain;
 	cursor: pointer;
+	image-rendering: auto;
 }
 #click {
 	display: none;
@@ -86,7 +87,7 @@ button:hover {
 	padding-left: 10px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 710px) {
 	.nav__links {
 		position: fixed;
 		top: 80px;
@@ -138,6 +139,14 @@ button:hover {
 	.menu-btn {
 		display: inline-block;
 	}
+	
+	.logo{
+		height: 100px;
+	}
 }
 
-
+@media (max-width: 435px){
+	.logo{
+		height: 100px;
+	}
+}

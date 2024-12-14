@@ -20,6 +20,9 @@
     transition: all 0.7s ease-in-out;
 }
 
+.imgCel{
+    display: none;
+}
 h2{
     align-items: center;
     gap: 10px 10px;
@@ -72,4 +75,15 @@ button:hover {
 	background-color: rgba(255, 255, 255, 0.8);
     color: black;
     border: solid #444444;
+}
+
+@media (max-width: 435px){
+    .img-fluid{
+        display: none;
+    }
+    .imgCel{
+        display: block;
+        padding-top: 50px;
+    }
+
 }
