@@ -1,20 +1,30 @@
 <body>
 <header>
+    <!-- ========== NAVBAR ============ -->
     <app-nav-bar></app-nav-bar>
 
     <figure class="containerHeader">
-        <img class="img-fluid" src="/assets/h3VbclkIEITVYkqucrRtjkApf0mGpTrnSg7jw2Hu.jpg" alt="Banner">
+        <img src="/assets/h3VbclkIEITVYkqucrRtjkApf0mGpTrnSg7jw2Hu.jpg" class="img-fluid" alt="Banner">
     </figure>
 </header>
 
 <main>
     <article class="container">
-        <img class="category" routerLink="/hombre" src="/assets/img1.webp" alt="Hombre">
-        <img class="category"  routerLink="/mujer" src="/assets/categoriaMujer.jpg" alt="Mujer">
+        <div class="hombre">
+            <h2>HOMBRE</h2>
+            <img class="category" routerLink="/hombre" src="/assets/img1.webp" alt="Hombre">
+        </div>
+        <div class="mujer">
+            <h2>MUJER</h2>
+            <img class="category"  routerLink="/mujer" src="/assets/categoriaMujer.jpg" alt="Mujer">
+        </div>
     </article>
     <section class="imgMedio">
         <img src="/assets/bannerMid.webp" alt="Imagen de medio">
     </section>
+    <div class="container text-center">
+        <h2>Productos mas comprados</h2>
+    </div>
     <article class="containerP">
         <img src="/assets/img2.webp" alt="img1">
         <img src="/assets/img3.webp" alt="img2">
@@ -23,7 +33,10 @@
         <img src="/assets/img6.webp" alt="img5">
         <img src="/assets/img7.webp" alt="img6">
     </article>
+    <div class="container text-center">
+        <a class="cta" routerLink="/productos-hombre"><button>Descrubre mas</button></a>
+    </div>
 </main>
-
-<app-footer></app-footer>
+<!-- =========== FOOTER ============ -->
+<app-footer></app-footer>  
 </body>
