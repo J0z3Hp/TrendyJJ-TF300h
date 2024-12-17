@@ -1,0 +1,20 @@
+<section class="container text-center">
+    
+        
+
+    <div class="row">
+        <div *ngFor="let products of allProducts" class="col">
+            <article class="containerP">
+                <div class="containerImg">
+                    <img src="/assets/img2.webp" alt="img1">
+                    <div class="text-center">
+                        <h5 class="name">{{products.name}}</h5>
+                        <h6 class="price">${{products.price}}</h6>
+                        <h5 class="tallas">S  M  L  X </h5>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    
+</section>

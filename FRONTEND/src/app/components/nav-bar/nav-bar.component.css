@@ -25,7 +25,12 @@ li, a, button {
 	display: none;
 }
 
-header {
+header{
+	width: 100vh;
+	height: 100px;
+}
+
+.menu {
 	position: fixed;
 	display: flex;
 	flex-wrap: wrap;
@@ -36,6 +41,7 @@ header {
 	padding-left: 3%;
 	padding-right: 8%;
 	width: 100vw;
+	z-index: 1000;
 }
 
 .nav__links {

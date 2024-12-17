@@ -1,18 +1,20 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { provideToastr } from 'ngx-toastr';
 import { provideAnimations } from '@angular/platform-browser/animations';
+import { authInterceptor } from './interceptor/auth.interceptor'; 
 
 import { routes } from './app.routes';
+
 
 export const appConfig: ApplicationConfig = {
   providers: 
   [
     provideZoneChangeDetection({ eventCoalescing: true }), 
-    provideRouter(routes),
-    provideHttpClient(),
-    provideToastr({
+    provideRouter(routes), 
+    provideHttpClient( withInterceptors([ authInterceptor ])),      
+    provideToastr({ 
       timeOut: 2000, 
       positionClass: "toast-bottom-left", 
       preventDuplicates: true, 
