@@ -8,13 +8,15 @@ import { loginUserRouter } from "./src/routes/loginUser.routes.js";
 import { adminRouter } from "./src/routes/admin.routes.js";
 import { orderRouter } from "./src/routes/orders.routes.js";
 import { loginAdminRouter } from "./src/routes/loginAdmin.routes.js";
+import cors from "cors"
 
 
 // Configurar el uso de nuestro servidor 
 const app = express();
 dotenv.config(); 
 connectionMongo (); 
-const port = process.env.PORT  
+const port = process.env.PORT   
+app.use(cors()); 
 
 //RUTAS QUE DEBE UTILIZAR 
 app.use(express.json()); 
