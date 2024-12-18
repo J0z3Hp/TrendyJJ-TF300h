@@ -21,7 +21,7 @@ export const routes: Routes = [
     {path: 'productos-mujer', component: MujerComponent, title: 'Mujer'},
     {path: 'registro', component: RegistroComponent, title: 'Registro'},
     {path: "loginAdmin", component: LoginAdminComponent, title: "Login"},
-    {path: "DashBoard", component: DashBoardComponent, title: "Admin", children:
+    {path: "dashBoard", component: DashBoardComponent, title: "Admin", children:
     [
         {path: "", component: InventarioComponent, title: "Inventario"},
         {path: "registroAdmin", component: RegistroAdminComponent, title: "Registro"},

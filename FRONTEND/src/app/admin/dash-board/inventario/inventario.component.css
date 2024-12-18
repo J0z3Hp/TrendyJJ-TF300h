@@ -1,0 +1,9 @@
+.imgAdmin img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.titulo{
+    margin-top: 50px;
+}

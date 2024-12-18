@@ -23,12 +23,12 @@ export class ProductosService {
   }
 
   // Peticion PUT
-  petProductos(productPut: Productos, id: string){
-    return this._httpClient.put(this.URL_PRODUCTOS + "/actualizar" + id, productPut);
+  putProductos(id: string | undefined, productPut: Productos ){
+    return this._httpClient.put(this.URL_PRODUCTOS + "/actualizar/" + id, productPut);
   }
 
   // Peticion DELETE
-  deleteProductos(id: string){
-    return this._httpClient.delete(this.URL_PRODUCTOS + "/eliminar" + id);
+  deleteProductos(id: string | undefined){
+    return this._httpClient.delete(this.URL_PRODUCTOS + "/eliminar/" + id);
   }
 } 
