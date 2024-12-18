@@ -1,34 +1,30 @@
-<main class="container mt-5 ms-auto text-center bg-light p-5 rounded border border-dark">
-    <h2>FORMULARIO DE INCIO DE SESIÓN</h2>
+<app-nav-bar></app-nav-bar>
+<article>
+  <form class="form" [formGroup]="formularioLoginAdmin" (ngSubmit)="handleSubmint()">
+      <h2 class="formTitle">Inicio de Sesión Administradores</h2>
+      
 
-    <!-- ngSubmit en un evento que identifica cuando le doy click al botón submit del formulario -->
-    <form [formGroup]="formularioLoginAdmin"  (ngSubmit)="handleSubmint()">
-        <div class="mb-3 text-start">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <div class="formContainer">
+          <div class="formContainer">
+              <div class="formGroup">
+                  <input type="text" id="email" class="formInput" placeholder=" " name="email" formControlName="email">
+                  <label for="email" class="fomrLabel">Email:</label>
+                  <span class="formLine"></span>
+              </div>
+          </div>
+          <div class="formContainer">
+              <div class="formGroup">
+                  <input type="password" id="password" class="formInput" placeholder=" " name="password" formControlName="password">
+                  <label for="password" class="fomrLabel">Contraseña:</label>
+                  <span class="formLine"></span>
+              </div>
+          </div>
+          <div>
+            <a href="#">Olvidaste tú contraseña?</a>
+          </div>
 
-          <input 
-          type="email" 
-          class="form-control" 
-          id="exampleInputEmail1" 
-          aria-describedby="emailHelp"
-          name="email"
-          formControlName = "email"
-          >
-        </div>
+          <input type="submit" class="formSubmit" value="Iniciar Sesión">
+      </div>
 
-    <!-- name y ponemos formControlName iguales a como lo definimos en el ts, para conectar correctamente -->
-        <div class="mb-3 text-start">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input 
-          type="password" 
-          class="form-control" 
-          id="exampleInputPassword1"
-          name="password"  
-          formControlName = "password"
-          >
-        </div>
-
-        <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
-      </form>
-
-</main>
+  </form>
+</article>

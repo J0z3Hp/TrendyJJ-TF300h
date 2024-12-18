@@ -21,6 +21,7 @@ export class PageMujerComponent {
     // 3. Creacion de metodos para recibir la respuesta
 
     // Peticion GET
+    //  VERIFICAR FILTRO DE CATEGORIA HOMBRE-MUJER
   getProducts(){
     this._productosService.getProductos().subscribe(
       {
