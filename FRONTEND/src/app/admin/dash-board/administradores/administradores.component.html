@@ -12,10 +12,11 @@
             </tr>
         </thead>
         <tbody class="table-group-divider" id="miTabla">
-            <tr *ngFor="let usuarios of allUsuarios">
-                <td>{{usuarios.fullName}}</td>
-                <td>{{usuarios.email}}</td>
+            <tr *ngFor="let admins of allAdmins">
+                <td>{{admins.name}}</td>
+                <td>{{admins.email}}</td>
             </tr>
         </tbody>
     </table>
 </main>
+

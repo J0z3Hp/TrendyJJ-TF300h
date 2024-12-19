@@ -35,7 +35,6 @@ export class InventarioComponent {
   getData() {
     this._productosService.getProductos().subscribe({
       next: (res: any) => {
-        console.log("res", res);
         this.allProducts = res.datos;
         console.log(this.allProducts);
       },
