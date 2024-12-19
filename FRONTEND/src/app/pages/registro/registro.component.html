@@ -1,6 +1,6 @@
 <app-nav-bar></app-nav-bar>
 <article>
-    <form class="form" [formGroup]="formularioRegistro" (ngSubmit)="handleSubmint()">
+    <form class="form" [formGroup]="formularioRegistro"  (ngSubmit)="handleSubmint()">
         <h2 class="formTitle">Registrate</h2>
         <p class="formP">¿Ya tienes una cuenta?</p> <a routerLink ="/inicioSesion"  class="formLink">Entra aquí</a>
 
@@ -25,7 +25,8 @@
                 </div>
             </div>
 
-            <input type="submit" class="formSubmit" value="Registrarse">
+            <!-- <input type="submit" class="formSubmit" value="Registrarse"> -->
+            <button type="submit" class="formSubmit">Registrarse</button>
         </div>
 
     </form>
