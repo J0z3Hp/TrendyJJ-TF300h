@@ -5,7 +5,7 @@ export const auth = (requiredRole) => {
 
         // Existencia del token ===================================
         let token = request.headers["authorization"];
-        console.log("Token obtenido de la cabecera: " + token);
+        // console.log("Token obtenido de la cabecera: " + token);
         
         if (!token){
             return response .status(401).json({
@@ -18,7 +18,7 @@ export const auth = (requiredRole) => {
 
         try{
             const decoded = await verifyToken(token);
-            console.log("token decodificado: ", decoded);
+            // console.log("token decodificado: ", decoded);
 
             // Esto es para verificar el rol
             if (requiredRole === "admin" && !decoded.isAdmin ){
