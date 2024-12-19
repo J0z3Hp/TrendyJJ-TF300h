@@ -4,6 +4,7 @@ import { NavBarComponent } from "../../../components/nav-bar/nav-bar.component";
 import { CredencialesAdminService } from '../../../services/login.service';
 import { CredencialesAdmin } from '../../../interfaces/credenciales-admin';
 import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-admin',
@@ -17,6 +18,7 @@ export class LoginAdminComponent {
   //Inicialmente injectamos dependencias
   _credencialesAdminService = inject(CredencialesAdminService);
   _toastrService = inject(ToastrService);
+  _Router = inject (Router);
 
   //CONEXIÓN DEL FORMULARIO
 
@@ -50,8 +52,10 @@ export class LoginAdminComponent {
         next: (res: any) => {
           console.log(res)
           if (res) {
-            localStorage.setItem('token', res.tokenGenerado)
-            this._credencialesAdminService.redireccionar();
+            localStorage.setItem('token', res.tokenGenerado);
+            this._Router.navigate(["/dashBoard"]);
+            // this._credencialesAdminService.redireccionar();
+            this._toastrService.success(res.mensaje);
           }
         },
 

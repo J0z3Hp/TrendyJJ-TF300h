@@ -59,6 +59,7 @@ export class FormularioLoginComponent {
         if(res){
           localStorage.setItem('token', res.tokenGenerado)
           this._credencialesAdminService.redireccionar();
+          this._toastrService.success(res.mensaje);
         }
       },
 

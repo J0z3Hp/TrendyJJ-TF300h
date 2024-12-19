@@ -24,7 +24,7 @@ export const routes: Routes = [
     {path: "dashBoard", component: DashBoardComponent, title: "Admin", children:
     [
         {path: "", component: InventarioComponent, title: "Inventario"},
-        {path: "registroAdmin", component: RegistroAdminComponent, title: "Registro"},
+        {path: "registroAdmin", component: RegistroAdminComponent, title: "RegistroAdmin"},
         {path: "usuarios", component: UsuariosComponent, title: "Usuarios"}
     ]},
     {path: '**', component: NotFoundComponent, title: 'Error 404'}
