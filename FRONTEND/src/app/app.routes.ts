@@ -12,6 +12,7 @@ import { InventarioComponent } from './admin/dash-board/inventario/inventario.co
 import { LoginAdminComponent } from './admin/dash-board/login-admin/login-admin.component';
 import { RegistroAdminComponent } from './admin/dash-board/registro-admin/registro-admin.component';
 import { UsuariosComponent } from './admin/dash-board/usuarios/usuarios.component';
+import { AdministradoresComponent } from './admin/dash-board/administradores/administradores.component';
 
 export const routes: Routes = [
     {path: '', component: InicioComponent, title: 'Inicio'},
@@ -23,9 +24,10 @@ export const routes: Routes = [
     {path: "loginAdmin", component: LoginAdminComponent, title: "Login"},
     {path: "dashBoard", component: DashBoardComponent, title: "Admin", children:
     [
-        {path: "", component: InventarioComponent, title: "Inventario"},
-        {path: "registroAdmin", component: RegistroAdminComponent, title: "RegistroAdmin"},
-        {path: "usuarios", component: UsuariosComponent, title: "Usuarios"}
+        {path: "", component: InventarioComponent, title: "Panel Admin | Inventario"},
+        {path: "registroAdmin", component: RegistroAdminComponent, title: "Panel Admin | RegistroAdmin"},
+        {path: "usuarios", component: UsuariosComponent, title: "Panel Admin | Usuarios"},
+        {path: "administradores", component: AdministradoresComponent, title: "Panel Admin | Administradores" }
     ]},
     {path: '**', component: NotFoundComponent, title: 'Error 404'}
 ];

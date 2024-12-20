@@ -54,11 +54,41 @@ img{
 
 .imgMedio{
     margin-top: 170px;
+    object-fit: cover;
 }
 
 .text-center h2{
     margin-top: 50px;
 }
+
+img{
+    padding-bottom: 10px;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.product:hover{
+    filter: grayscale(100) brightness(50%) ;
+    border-radius: 15px;
+}
+
+h2{
+    font-family: "Libre Baskerville", serif;
+}
+h5, h6{
+    font-family: "Libre Baskerville", serif;
+}
+
+h6{
+    color: #747474;
+}
+
+.tallas{
+    letter-spacing: 15px;
+}
+
 button{
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
@@ -83,6 +113,7 @@ button:hover {
 }
 
 @media (max-width: 435px){
+    
     .img-fluid{
         display: none;
     }
@@ -91,10 +122,30 @@ button:hover {
         padding-top: 50px;
     }
 
+    .imgMedio{
+        padding-top: 70px;
+        width: 850px;
+        position: relative;
+        right: 49%;
+    }
+
+    .container{
+        width: 98vw;
+    }
+
+    .container h2{
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+
 }
 
 @media (max-width: 1025px){
     .imgMedio{
         margin-top: -100px;
+    }
+
+    .containerHeader{
+        margin-top: -30px;
     }
 }

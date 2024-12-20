@@ -24,7 +24,7 @@
         </div>
         <div class="mb-3">
             <label for="inputPrecio" class="form-label">Precio</label>
-            <input type="number" class="form-control" name="precio" [(ngModel)]="price"/>
+            <input type="text" class="form-control" name="precio" [(ngModel)]="price"/>
         </div>
 
         <button (click)="editMode ? putProduct() : postData()" type="button"

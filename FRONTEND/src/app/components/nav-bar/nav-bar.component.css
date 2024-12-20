@@ -153,6 +153,8 @@ button:hover {
 
 @media (max-width: 435px){
 	.logo{
-		height: 100px;
+		width: 600px;
+        position: relative;
+		left: 26px;
 	}
 }

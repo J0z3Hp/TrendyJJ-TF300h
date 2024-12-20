@@ -16,9 +16,12 @@ h6{
     color: #747474;
 }
 
+
 .tallas{
     letter-spacing: 15px;
 }
+
+
 .containerP{
     width: 350px;
     height: auto;
@@ -27,12 +30,17 @@ h6{
     grid-auto-rows: 450px;
     display: flex;
     gap: 9px 20px;
-    
 }
 
 img{
     padding-bottom: 10px;
     width: 100%;
     object-fit: contain;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
+.product:hover{
+    filter: grayscale(100) brightness(50%) ;
+    border-radius: 15px;
+}
