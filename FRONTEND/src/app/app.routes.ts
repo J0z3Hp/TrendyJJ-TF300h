@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 
-import { InicioComponent } from './pages/inicio/inicio.component';
+import { InicioComponent } from './pages/inicio/inicio.component'; 
 import { LoginComponent } from './pages/login/login.component';
 import { OrdenesComponent } from './pages/ordenes/ordenes.component';
 import { RegistroComponent } from './pages/registro/registro.component';
@@ -15,14 +15,14 @@ import { UsuariosComponent } from './admin/dash-board/usuarios/usuarios.componen
 import { AdministradoresComponent } from './admin/dash-board/administradores/administradores.component';
 
 export const routes: Routes = [
-    {path: '', component: InicioComponent, title: 'Inicio'},
-    {path: 'inicioSesion', component:LoginComponent, title:'InicioSesión'},
-    {path: 'ordenes', component: OrdenesComponent, title: 'Ordenes'},
-    {path: 'productos-hombre', component: HombreComponent, title: 'Hombre'},
-    {path: 'productos-mujer', component: MujerComponent, title: 'Mujer'},
-    {path: 'registro', component: RegistroComponent, title: 'Registro'},
-    {path: "loginAdmin", component: LoginAdminComponent, title: "Login"},
-    {path: "dashBoard", component: DashBoardComponent, title: "Admin", children:
+    {path: '', component: InicioComponent, title: 'Trendy JJ | Inicio'},
+    {path: 'inicioSesion', component:LoginComponent, title:'Trendy JJ | Login'},
+    {path: 'ordenes', component: OrdenesComponent, title: 'Trendy JJ | Ordenes'},
+    {path: 'productos-hombre', component: HombreComponent, title: 'Trendy JJ | Camisetas'},
+    {path: 'productos-mujer', component: MujerComponent, title: 'Trendy JJ | Camisetas'},
+    {path: 'registro', component: RegistroComponent, title: 'Trendy JJ | Registro'},
+    {path: "loginAdmin", component: LoginAdminComponent, title: "Trendy JJ | LoginAdmin"},
+    {path: "dashBoard", component: DashBoardComponent, title: "Trendy JJ | Admin", children:
     [
         {path: "", component: InventarioComponent, title: "Panel Admin | Inventario"},
         {path: "registroAdmin", component: RegistroAdminComponent, title: "Panel Admin | RegistroAdmin"},

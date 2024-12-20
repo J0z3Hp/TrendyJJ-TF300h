@@ -13,6 +13,7 @@ li, a, button {
 	font-size: 16px;
 	color: rgb(3, 3, 3);
 	text-decoration: none;
+	list-style: none;
 }
 .logo{
 	aspect-ratio: 4/3;
@@ -55,6 +56,14 @@ header{
 	padding-left: 20px;
 	padding-right: 20px;
 }
+
+.bi{
+	background-color: rgb(233, 20, 20);
+	position: relative;
+	left: 545px;
+	list-style: none;
+}
+
 
 .nav__links li a {
 	transition: all 0.3s ease 0s;
