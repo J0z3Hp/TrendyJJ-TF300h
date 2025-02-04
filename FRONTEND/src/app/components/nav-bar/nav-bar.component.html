@@ -9,8 +9,8 @@
 		<ul class="nav__links">
 			<li><a class="active" routerLink="/">Inicio</a></li>
 			<li><a routerLink="/productos-hombre">Camisetas</a></li> 
-			<li><a routerLink="/registro">Registro</a></li>
-			<li><a routerLink="/inicioSesion">Login</a></li>
+			<li *ngOn="isLog" ><a routerLink="/registro">Registro</a></li>
+			<li *ngOn="isLog" ><a routerLink="/inicioSesion">Login</a></li>
 			<li *ngIf="isLog"><button (click)="cierreSesion()" class="bi bi-box-arrow-in-left"> Cerrar Sesión</button></li> 
 		</ul>
 		<a class="cta" href="https://web.whatsapp.com/" target="_blank"><button>Contact</button></a>
