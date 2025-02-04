@@ -47,7 +47,7 @@ export class InventarioComponent {
   // Crear los datos
   postData() {
     if (this.name === "" || this.image === "" || this.price === "") {
-      alert("Ingrese todos los campos para continuar")
+      alert("Ingrese todos los campos para continuar");
     }else{
       // Tienen que ser los mismo que estan en la interface (name, image, price, etc)
       const newProduct: Productos = {
