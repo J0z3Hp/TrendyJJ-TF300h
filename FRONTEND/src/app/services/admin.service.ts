@@ -21,7 +21,7 @@ export class AdminService {
   
   //RUTA DE CONEXIÓN
 
-  private URL_ADMIN = 'http://localhost:9000/administradores/';
+  private URL_ADMIN = 'http://159.223.203.234:9000/administradores/';
 
   //PETICIONES
 crearAdmin(admin: Admin){

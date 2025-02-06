@@ -10,7 +10,7 @@ export class ProductosService {
   private _httpClient = inject(HttpClient);
 
   // URL DE LAS CAMISETAS
-  private URL_PRODUCTOS = "http://localhost:9000/productos";
+  private URL_PRODUCTOS = "http://159.223.203.234:9000/productos";
 
   // Peticion POST
   postProductos(product: Productos){

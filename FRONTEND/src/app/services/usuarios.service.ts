@@ -10,7 +10,7 @@ export class UsuariosService {
   private _httpClient = inject(HttpClient);
 
   // URL de nuestros clientes
-  private URL_USUARIOS = "http://localhost:9000/usuarios";
+  private URL_USUARIOS = "http://159.223.203.234:9000/usuarios";
 
   // Peticion POST
   postUsuarios(user: Usuarios){

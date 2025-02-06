@@ -18,8 +18,8 @@ export class CredencialesAdminService {
 
 //Creación de ruta de conexión al Back
 
-private URL_LOGINADMIN = 'http://localhost:9000/inicarSesionAdmin/';
-private URL_LOGIN = 'http://localhost:9000/iniciarSesion/';
+private URL_LOGINADMIN = 'http://159.223.203.234:9000/inicarSesionAdmin/';
+private URL_LOGIN = 'http://159.223.203.234:9000/iniciarSesion/';
 
 // Iniciamos peticiones
 
