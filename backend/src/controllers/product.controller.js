@@ -1,6 +1,7 @@
-import { request, response } from "express";
+// Aca importamos nuestro modelos de porductos
 import { productModel } from "../models/product.model.js";
 
+// Aca tendremos 4 peticiones POST, GET, PUT, DELETE
 // peticiocn POST
 export const postProduct = async (request, response) => {
 
@@ -8,13 +9,13 @@ export const postProduct = async (request, response) => {
     try { 
         const newProduct = await productModel.create(request.body); 
         return response.status(201).json({
-            "mensaje": "El producto se creo correctamente",
+            "mensaje": "La camiseta se creo correctamente :)",
             "datos": newProduct
         });
 
     } catch (error) {
         return response.status(400).json({
-            "mensaje": "Ocurrio un error al crear un producto",
+            "mensaje": "Ocurrio un error al crear una camiseta :(",
             "problem": error || error.message
         });
     }
@@ -30,18 +31,18 @@ export const getProduct = async (request, response) => {
 
         if(products.length === 0){
             return response.status(200).json({
-                "mensaje": "No se encontraron productos en la base de datos"
+                "mensaje": "No se encontraron camisetas en la base de datos"
             });
         }
 
         return response.status(200).json({
-            "mensaje": "Esto son todos los productos encontrados",
+            "mensaje": "Esto son todos las camisetas encontradas",
             "datos": products
         });
 
     } catch (error) {
         return response.status(400).json({
-            "mensaje": "Ocurrio un error al buscar los producto",
+            "mensaje": "Ocurrio un error al buscar las camisetas",
             "problem": error || error.message
         });
     }
@@ -53,24 +54,24 @@ export const putProductById = async (request, response) => {
     // LOGICA DE LA PETICION PUT
     try {
         let idForPut = request.params.id; 
-        let dataForUpdate = request.body; a
+        let dataForUpdate = request.body; 
 
         const productUpdate = await productModel.findByIdAndUpdate(idForPut, dataForUpdate); 
 
         if(!productUpdate){
             return response.status(404).json({
-                "mensaje": "Lo siento!!! No se encontró producto para actualizar"
+                "mensaje": "Lo siento!!! No se encontró alguna camistea para actualizar"
             });
         }
 
         return response.status(200).json({
-            "mensaje": "Se actualizo el producto correctamente",
+            "mensaje": "Se actualizo la camiseta correctamente",
             "datos": productUpdate
         });
 
     } catch (error) {
         return response.status(400).json({
-            "mensaje": "Ocurrio un error al actualizar el producto",
+            "mensaje": "Ocurrio un error al actualizar la camiseta",
             "problem": error || error.message
         });
     }
@@ -85,12 +86,12 @@ export const deleteProductById = async (request, response) => {
         await productModel.findByIdAndDelete(idForDelete); 
 
         return response.status(200).json({
-            "mensaje": "Producto eliminado exitosamente"
+            "mensaje": "Camiseta  eliminada correctamente"
         });
         
     } catch (error) {
         return response.status(400).json({
-            "mensaje": "Ocurrio un error al eliminar el producto",
+            "mensaje": "Ocurrio un error al eliminar la camiseta",
             "problem": error || error.message
         });
     }
